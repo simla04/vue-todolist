@@ -26,17 +26,17 @@ var app = new Vue ( {
             },
             todoCompleted(index, elem)
         })
-    }
+    },
     methods: {
-        rimuoviElemento(index, elem){
+        rimuovoElemento(index, elem){
             // rimuovi oggetto
             // splice: rimuove un elemento di un array grazie alla posizione e ne eliminta tanti quanti gli dico dall'elemento  trovato
             console.log( index )
-            // this.todoList.splice( index, 1 )
+            // this.todoList.splice( index, 1 );
         },
-        todoCompleted( index, elem ) {
+        todoCompleted( index) {
             // modifico lo stato della proprietà 
-            // elem.done = true;
+            /* this.todoList.splice( index, 1 ); */ // elem.done = true;
 
             if( elem.done == false){
                 elem.done = true;
